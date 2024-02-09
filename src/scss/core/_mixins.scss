@@ -1,0 +1,17 @@
+@mixin respond($width, $condition: "max") {
+  $size-rule: max-width;
+
+  @if $condition == "min" {
+    $size-rule: min-width;
+  }
+
+  @media ($size-rule: $width) {
+    @content;
+  }
+}
+
+@mixin svg-asset($padding-top) {
+  .svg-asset {
+    padding-top: $padding-top;
+  }
+}

@@ -1,0 +1,10 @@
+// Tailwind
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// Core
+@import 'core/vars';
+@import 'core/mixins';
+@import 'core/keyframes';
+@import 'core/typography';
