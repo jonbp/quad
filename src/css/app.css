@@ -1,0 +1,15 @@
+/* Tailwind */
+@import "tailwindcss" prefix(qd);
+
+/* Core imports */
+@import "./core/mixins.css";
+@import "./core/keyframes.css";
+@import "./core/typography.css";
+
+/* Sources */
+@source "../../**/*.php";
+@source "../**/*.js";
+
+body {
+  @apply qd:bg-white;
+}

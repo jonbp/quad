@@ -5,7 +5,7 @@
 
 ## About
 
-A Tailwind + Laravel Mix WordPress starter theme for lean and fast development.
+A Tailwind (v4) + Vite WordPress starter theme for lean and fast development.
 
 ## Features
 
@@ -13,8 +13,8 @@ The theme makes heavy use of the templates folder to keep the root directory cle
 
 The theme uses the following tools:
 
-- [Tailwind CSS](https://tailwindcss.com/) — A utility-first CSS framework for rapid UI development.
-- [Laravel Mix](https://laravel-mix.com/) — An elegant wrapper around Webpack and simplifies the process of building assets.
+- [Tailwind CSS 4](https://tailwindcss.com/) — A utility-first CSS framework for rapid UI development.
+- [Vite](https://vitejs.dev/) — A fast, modern build tool for bundling assets.
 
 ## Installation
 
@@ -22,9 +22,9 @@ The theme uses the following tools:
 
 2. Run `npm install` to install the required dependencies.
 
-3. Run `npm run watch` to start the development server. Any changes to the template files are updated in the files. In the interests of performance, the theme does not include a live reload feature.
+3. Run `npm run dev` to start a watched build that writes assets into `dist/`. Any changes to the template files are updated in the files. In the interests of performance, the theme does not include a live reload feature.
 
-4. Run `npm run production` to build the theme for production.
+4. Run `npm run build` to create an optimized production build.
 
 ## Requirements
 
@@ -38,6 +38,7 @@ If you wish you can white label the theme by changing the following:
 - `package.json` — Change the `name` and `description` fields.
 - `quad_` instances across the theme. You can simply do a find and replace for `quad_` and replace it with your own prefix.
 - `style.css` — Change the theme name, author, and description. This file is only used for the theme's metadata and is not used for the theme's styles.
+- `src/css/app.css` — This theme uses a `qd` prefix for generated Tailwind classes. You can change this by updating the `prefix(qd);` line.
 
 ## Things to Note
 
